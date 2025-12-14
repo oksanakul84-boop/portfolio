@@ -1,0 +1,258 @@
+/* Базовий скидання стилів та шрифти */
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 
+    sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    font-size: 18px;
+    padding-top: 60px;
+
+}
+
+.fixed-header {
+    position: fixed; /* Закріплює елемент відносно вікна перегляду */
+    top: 0;          /* Розташовує його біля верхнього краю */
+    left: 0;         /* Розташовує його біля лівого краю */
+    width: 100%;     /* Розтягує на всю ширину екрана */
+    /* Градієнт темно-синій колір фону */
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: white;    /* Колір тексту */
+    padding: 10px;   /* Внутрішній відступ */
+    text-align: center;
+    z-index: 1000;   /* Гарантує, що заголовок буде поверх іншого вмісту */
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/* Секція заголовка профілю */
+.profile-header {
+  /* Градієнт темно-синій колір фону */
+  background: #020024;
+  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  color: white;
+  padding: 40px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+    
+}
+
+.profile-pic-container {
+/* Стилі для створення ефекту кола навколо фото */
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.profile-info h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.profile-info p {
+    margin: 0 0 15px 0;
+    font-size: 1rem;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+/* Базовий стиль посилань */
+.social-icons a {
+    color: white; /* Початковий колір іконок (на синьому фоні) */
+    font-size: 1.5rem; /* Розмір іконок */
+    margin-right: 20px; /* Відстань між іконками */
+    text-decoration: none; /* Прибирає підкреслення */
+    transition: color 0.3s ease; /* Плавний перехід кольору при наведенні */
+}
+
+/* Стиль при наведенні курсору (ефект "активності") */
+.social-icons a:hover {
+    color: #4da6ff; /* Змінює колір на світліший синій при наведенні */
+}
+
+
+.social-icons a:hover {
+    color: #4da6ff;
+}
+
+/* Секція About Me */
+.about-me-section {
+    color: #2b549f; /* Колір тексту, як на фото */
+    padding: 10px 10px;
+    text-align: justify;
+}
+
+
+
+.about-me-section h2 {
+    color: #2b549f; /* Синій колір для заголовка */
+    font-size: 2.3rem;
+    border-bottom: 2px solid #708090;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+
+
+/* Секція About My education */
+.about-my-education {
+    color: #2b549f; /* Колір тексту, як на фото */
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.about-my-education h3 {
+    color: #2b549f; /* Синій колір для заголовка */
+    font-size: 2.3rem;
+    border-bottom: 2px solid #708090;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.about-my-education p1 {
+    font-weight: bold;
+}
+
+/* Секція About My experience */
+.about-my-experience {
+    color: #2b549f; /* Колір тексту, як на фото */
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.about-my-experience h4 {
+    color: #2b549f; /* Синій колір для заголовка */
+    font-size: 2.3rem;
+    border-bottom: 2px solid #708090;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: justify;    
+}
+.about-my-experience p1 {
+    font-weight: bold;
+}
+
+/* Секція About My skills */
+.about-my-skills {
+    color: #2b549f; /* Колір тексту, як на фото */
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.about-my-skills h5 {
+    color: #2b549f; /* Синій колір для заголовка */
+    font-size: 2.3rem;
+    border-bottom: 2px solid #708090;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: justify;    
+}  
+
+.about-my-skills p1 {
+    font-weight: bold;
+}
+
+/* Секція About My devis */
+.about-my-devis {
+    color: #2b549f; /* Колір тексту, як на фото */
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.about-my-devis p1 {
+    font-weight: bold;
+}
+
+
+.about-y-devis h6 {
+    color: #2b549f; /* Синій колір для заголовка */
+    font-size: 2.3rem;
+    border-bottom: 2px solid #708090;
+       
+}  
+
+
+.site-footer {
+    /* Градієнт темно-синій колір фону */
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+
+    /* Примусово розтягує елемент на всю ширину екрана */
+    width: 100vw; 
+    
+    /* Компенсує поточне розташування елемента, повертаючи його до лівого краю */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/* Додатково, щоб уникнути горизонтальної полоси прокрутки */
+.body {
+    overflow-x: hidden;
+}
+
+
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+    }
+}
